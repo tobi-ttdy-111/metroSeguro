@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/logoMetro.png" type="image/x-icon">
+    <title>Comenzar</title>
+</head>
+
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./comenzar.html" class="nav__logo"><img src="./img/logoMetro.png"> Metro Seguro</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./lineas.html" class="nav__link">Líneas</a></li>
+                    <li class="nav__item"><a href="./añadir.html" class="nav__link">Publicar</a></li>
+                    <li class="nav__item"><a href="./comenzar.html" class="nav__link active-link">Comenzar</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class='bx bx-x'></i></div>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__publications" id="publications-open"><i class='bx bx-upload'></i></div>
+                <div class="nav__login" id="nav-logout"><i class='bx bx-log-in-circle'></i></div>
+                <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- publications -->
+    <div class="publications" id="publications">
+        <i class='bx bx-x publication__close' id="publications-close"></i>
+        <h2 class="publication__title-center">Tus publicaciones</h2>
+        <div class="pulications__scroll">
+            <div class="publication__container" id="publicaciones">
+            </div>
+            <div class="publication__prices" id="total">
+                <span class="publication__prices-item">Total: < total> publicaiones</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg"><img src="./img/logoMetro.png" alt="" class="home__img"></div>
+                <div class="home__social">
+                    <span href="https://www.facebook.com/" target="_blank" class="home__social-link">Juntos &nbsp por un metro mas seguro</a>
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">Bienvenido a Metro seguro</h1>
+                    <p class="home__description">En esta aplicación podrás enterarte de los altercados ocurridos en el metro de la CDMX además si fuiste víctima de algún suceso puedes añadirlo para que otras personas puedan enterarse. Si necesitas ayuda no dudes en visitar nuestro <a class="link" href="./soporte.html"><b>Chat de soporte</b></a></p>
+                    <span class="home__price">Metro CDMX</span>
+                    <div class="home__btns">
+                        <a href="./lineas.html" class="button button--gray button--small">Explorar</a>
+                        <a class="button home__button" href="./añadir.html">Añadir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- alerts -->
+    <div class="alerts" id="alerts"></div>
+
+    <!-- scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/comenzar.js"></script>
+
+</body>
+
+</html>

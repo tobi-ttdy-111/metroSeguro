@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/logoMetro.png" type="image/x-icon">
+    <title>Publicar</title>
+</head>
+
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./comenzar.html" class="nav__logo"><img src="./img/logoMetro.png"> Metro Seguro</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./lineas.html" class="nav__link">Líneas</a></li>
+                    <li class="nav__item"><a href="./añadir.html" class="nav__link active-link">Publicar</a></li>
+                    <li class="nav__item"><a href="./comenzar.html" class="nav__link">Comenzar</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class='bx bx-x'></i></div>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__publications" id="publications-open"><i class='bx bx-upload'></i></div>
+                <div class="nav__login" id="nav-logout"><i class='bx bx-log-in-circle'></i></div>
+                <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- publications -->
+    <div class="publications" id="publications">
+        <i class='bx bx-x publication__close' id="publications-close"></i>
+        <h2 class="publication__title-center">Tus publicaciones</h2>
+        <div class="pulications__scroll">
+            <div class="publication__container" id="publicaciones">
+            </div>
+            <div class="publication__prices" id="total">
+                <span class="publication__prices-item">Total: < total> publicaiones</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <section class="section container">
+            <h2 class="section__title">Crear publicación</h2>
+            <div class="section__form">
+                <img src="./img/logoMetro.png" alt="logoMetro" class="ocult">
+                <div class="form">
+                    <h5>Línea:</h5><select class="input" id="linea">
+                        <option value="1">Línea 1 Observatorio - Pantitlán</option>
+                        <option value="2">Línea 2 Tasqueña - Cuatro Caminos</option>
+                        <option value="3">Línea 3 Indios Verdes - Universidad</option>
+                        <option value="4">Línea 4 Martín Carrera - Santa Anita</option>
+                        <option value="5">Línea 5 Pantitlán - Politécnico</option>
+                        <option value="6">Línea 6 El Rosario - Martín Carrera</option>
+                        <option value="7">Línea 7 El Rosario - Barranca del Muerto</option>
+                        <option value="8">Línea 8 Garibaldi-Lagunilla - Constitución de 1917</option>
+                        <option value="9">Línea 9 Pantitlán - Tacubaya</option>
+                        <option value="A">Línea A Pantitlán - La Paz</option>
+                        <option value="B">Línea B Buenavista - Ciudad Azteca</option>
+                        <option value="12">Línea 12 Tláhuac - Mixcoac</option>
+                    </select><br>
+                    <h5>Estación:</h5> <select class="input" id="estacion">
+                        <option value="Observatorio">Observatorio</option>
+                        <option value="Tacubaya">Tacubaya</option>
+                        <option value="Juanacatlán">Juanacatlán</option>
+                        <option value="Chapultepec">Chapultepec</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Insurgentes">Insurgentes</option>
+                        <option value="Cuauhtémoc">Cuauhtémoc</option>
+                        <option value="Balderas">Balderas</option>
+                        <option value="Salto del Agua">Salto del Agua</option>
+                        <option value="Isabel la Católica">Isabel la Católica</option>
+                        <option value="Pino Suárez">Pino Suárez</option>
+                        <option value="Merced">Merced</option>
+                        <option value="Candelaria">Candelaria</option>
+                        <option value="San Lázaro">San Lázaro</option>
+                        <option value="Moctezuma">Moctezuma</option>
+                        <option value="Balbuena">Balbuena</option>
+                        <option value="Boulevard Puerto Aéreo">Boulevard Puerto Aéreo</option>
+                        <option value="Gómez Farías">Gómez Farías</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Pantitlán">Pantitlán</option>
+                    </select><br>
+                    <h5>Tipo de altercado:</h5><select class="input" id="tipo">
+                        <option value="Intentos de acoso">Intentos de acoso</option>
+                        <option value="Fallo estructural">Fallo estructural</option>
+                        <option value="Fallo en el vehículo o bagón">Fallo en el vehículo o bagón</option>
+                        <option value="Acoso sexual">Acoso sexual</option>
+                        <option value="Robo">Robo</option>
+                        <option value="Otro">Otro</option>
+                    </select><br>
+                    <h5>Fecha:</h5><input type="date" class="input" id="fechaOcurrida"><br>
+                    <h5>Horario:</h5> <input type="time" class="input" id="horario"><br>
+                    <h5>Descripción:</h5><input type="text" placeholder="Añade una descripcion" class="input" id="descripcion"><br>
+                    <h5>Archivo:</h5> <input type="file" id="imagen"><br>
+                    <button class="button button--gray button--small mt" href="#" id="crear">Crear publicación</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- alerts -->
+    <div class="alerts" id="alerts">
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/añadir.js"></script>
+
+</body>
+
+</html>

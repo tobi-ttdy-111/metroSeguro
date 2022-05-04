@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/logoMetro.png" type="image/x-icon">
+    <title>Altercados</title>
+</head>
+
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./comenzar.html" class="nav__logo"><img src="./img/logoMetro.png"> Metro Seguro</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./usuarios.html" class="nav__link">Usuarios</a></li>
+                    <li class="nav__item"><a href="./altercados.html" class="nav__link active-link">Altercados</a></li>
+                    <li class="nav__item"><a href="./registrarAdmin.html" class="nav__link">Registrar administrador</a></li>
+                    <li class="nav__item"><a href="./chat.html" class="nav__link">Soporte</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class='bx bx-x'></i></div>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__login" id="nav-logout"><i class='bx bx-log-in-circle'></i></div>
+                <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main -->
+    <div class="main">
+        <section class="section container">
+            <h2 class="section__title">Altercados</h2>
+            <div class="section__filters">
+                <span class="ocult">Filtros</span>
+                <div class="filter">
+                    <span>Tipo de altercado: </span>
+                    <select id="tipo">
+                        <option value="all">Cualquiera</option>
+                        <option value="Intentos de acoso">Intentos de acoso</option>
+                        <option value="Fallo estructural">Fallo estrucural</option>
+                        <option value="Fallo en el vehículo o bagón">Fallo en el vehículo o bagón</option>
+                        <option value="Acoso sexual">Acoso sexual</option>
+                        <option value="Robo">Robo</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <span>Estado </span>
+                    <select id="estado">
+                        <option value="all">Todos</option>
+                        <option value="normal">Normal</option>
+                        <option value="reportado">Reportado</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <span>Línea: </span>
+                    <select id="linea">
+                        <option value="all">Todas</option>
+                        <option value="1">Línea 1</option>
+                        <option value="2">Línea 2</option>
+                        <option value="3">Línea 3</option>
+                        <option value="4">Línea 4</option>
+                        <option value="5">Línea 5</option>
+                        <option value="6">Línea 6</option>
+                        <option value="7">Línea 7</option>
+                        <option value="8">Línea 8</option>
+                        <option value="9">Línea 9</option>
+                        <option value="A">Línea A</option>
+                        <option value="B">Línea B</option>
+                        <option value="12">Línea 12</option>
+                    </select>
+                </div>
+            </div>
+            <div class="altercados"></div>
+        </section>
+    </div>
+
+    <!-- alerts -->
+    <div class="alerts" id="alerts"></div>
+
+    <!-- scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/adminAlterc.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+.forms {
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.forms-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.forms-form input {
+    width: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
