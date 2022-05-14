@@ -169,7 +169,7 @@ const renderPublicaciones = ( res ) => {
     res.forEach( publicacion => {
         altercados.innerHTML += `
         <div class="altercado">
-            <img src="${ publicacion.imagen || `./img/linea${ publicacion.linea }.png` }" alt="">
+            <img src="${ publicacion.imagen || `./img/linea${ publicacion.linea }.PNG` }" alt="">
             <div class="altercado__content">
                 <p>Estación: ${ publicacion.estacion }</p>
                 <p>Tipo de altercado: ${ publicacion.tipo }</p>
